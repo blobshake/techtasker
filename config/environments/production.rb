@@ -22,12 +22,12 @@ Techtasker::Application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = false
 
-  # Compress JavaScripts and CSS.
+  # JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -77,4 +77,15 @@ Techtasker::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  config.assets.digest = true
+ 
+config.assets.configure do |env|
+  env.js_compressor  = :uglify # or :closure, :yui
+  env.css_compressor = :sass   # or :yui
+ 
+  env.logger = Rails.logger
+ 
+  env.cache = ActiveSupport::Cache::FileStore.new("tmp/cache/assets")
+end
 end

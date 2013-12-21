@@ -8,6 +8,11 @@ group :development, :test do
     gem 'sqlite3'
 end
 
+gem 'rspec-rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', platforms: :ruby
+ 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
