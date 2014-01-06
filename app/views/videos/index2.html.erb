@@ -1,11 +1,17 @@
-<h1>Index 2 page</h1>
+<h1>Technology Made Simple</h1>
 
 
     <% @videos.each do |video| %>
      
-  <p>      <%= video.headline %> </p>
-
-
+<div id="vidthumnailcontainer" style="padding:10px 5px 10px 5px;font-size:8px;font-weight:bold;" 
+<p>
+<iframe id="ytplayer" type="text/html" width="213" height="130"
+  src="http://www.youtube.com/embed/<%= video.youtubeid %>"
+  frameborder="0"/>
+  </iframe>
+</p>
+ <p>      <%= video.headline %> </p>
+</div>
 <% end %>
 
 <%= link_to 'New Video', new_video_path %>
