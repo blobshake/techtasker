@@ -6,6 +6,10 @@ class VideosController < ApplicationController
   def index
     @videos = Video.all
   end
+  
+  def index2
+    @videos = Video.all
+  end
 
   # GET /videos/1
   # GET /videos/1.json
