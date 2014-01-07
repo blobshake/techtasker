@@ -12,23 +12,20 @@
 </p>
 
 <div id="sharemodule">
+  <%= link_to "https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}" do %>
+
 <div id="fbshare">
   Share on Facebook
 </div>
+  <% end %>
+  <%= link_to "https://twitter.com/share?text=#{@video.headline}" do %>
 <div id="twittershare">
   Share on Twitter
 </div>
+ <% end %>
+ 
 </div>
-<script> 
-  $( "#fbshare" ).click(function() {
-  alert( "Lets share this on Facebook" );
-});
-  $( "#twittershare" ).click(function() {
-  alert( "Lets share this on Twitter" );
-});
-</script>  
-  
-
+ 
 <%#= link_to 'Edit', edit_video_path(@video) %> 
 <%#= link_to 'Back', videos_path %>
 
