@@ -10,11 +10,14 @@
   frameborder="0"/>
   </iframe>
 </p>
-<div id="fbshare" style="background:#3b5998;height:45px;width:210px;border-radius:6px;">
+
+<div id="sharemodule">
+<div id="fbshare">
   Share on Facebook
 </div>
-<div id="twittershare" style="background:#00BEF0;width:210px;height:45px;border-radius:6px;">
-  Share Twitter
+<div id="twittershare">
+  Share on Twitter
+</div>
 </div>
 <script> 
   $( "#fbshare" ).click(function() {
@@ -25,7 +28,7 @@
 });
 </script>  
   
-<p>
-<%= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>
-</p>
+
+<%#= link_to 'Edit', edit_video_path(@video) %> 
+<%#= link_to 'Back', videos_path %>
+
