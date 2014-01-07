@@ -2,10 +2,13 @@
      
 <div id="vidthumbnailcontainer"> 
 
+<!-- 
 <iframe id="ytplayer" type="text/html" width="213" height="130"
   src="http://www.youtube.com/embed/<%= video.youtubeid %>"
   frameborder="0"/>
   </iframe>
+-->
+ <img src="http://img.youtube.com/vi/<%= video.youtubeid %>/hqdefault.jpg" height="130" width ="213">
 </br>      <%= video.headline %> 
 </div>
 <% end %>
