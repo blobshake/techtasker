@@ -10,9 +10,21 @@
   frameborder="0"/>
   </iframe>
 </p>
-<div id="sharemodule" style="background:yellow;">
-  <h1> Facebook and Twiter Share buttons </h1>
+<div id="fbshare" style="background:#3b5998;height:45px;width:210px;border-radius:6px;">
+  Share on Facebook
 </div>
+<div id="twittershare" style="background:#00BEF0;width:210px;height:45px;border-radius:6px;">
+  Share Twitter
+</div>
+<script> 
+  $( "#fbshare" ).click(function() {
+  alert( "Lets share this on Facebook" );
+});
+  $( "#twittershare" ).click(function() {
+  alert( "Lets share this on Twitter" );
+});
+</script>  
+  
 <p>
 <%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>

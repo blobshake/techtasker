@@ -18,17 +18,39 @@ body {
   font-size: 13px;
   line-height: 18px;
   text-align:center;
+  height:100%;
+  width:100%;
 }
-#logo{
-  font-family:Georgia;
-  float:left;
-  color:black;
-  font-weight:400;
-}
+
 #hellobar{
-  margin-bottom:50px;
+  margin-bottom:0px;
   border-bottom:1px solid #dedede;
+  background:#ECF0F1;
+  padding-top:45px;
+  height:69px;
+  font-family:MuseoSans;
+  font-size:24px;
+}
+#container{
+  width:100%;
+  height:800px;
+  text-align:center;
+  margin-top:25px;
 }
 #videoheadline{
   margin-bottom:35px;
+}
+#footer{
+  border-top:1px solid;
+  height:auto;
+  text-align:center;
+  background:#ECF0F1;
+}
+#vidthumbnailcontainer{
+  padding:10px 5px 10px 5px;
+  font-size:12px;
+  font-weight:bold;
+  width:25%;
+  height:246px;
+  float:left;
 }
