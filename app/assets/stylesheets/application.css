@@ -27,9 +27,13 @@ body {
   border-bottom:1px solid #dedede;
   background:#ECF0F1;
   padding-top:45px;
-  height:69px;
-  font-family:MuseoSans;
-  font-size:24px;
+  height:49px;
+  font-family:MyriadPro;
+  font-size:30px;
+}
+#vidthumbnailcontainer:hover{
+  color:#5b5b5b;
+  background:#def1f8;
 }
 #container{
   width:100%;
@@ -49,9 +53,9 @@ body {
 #vidthumbnailcontainer{
   padding:10px 5px 10px 5px;
   font-size:12px;
-  font-weight:bold;
+  font-family:helvetica;
   width:30%;
-  height:246px;
+  height:200px;
   float:left;
 }
 #fbshare{
