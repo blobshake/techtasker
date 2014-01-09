@@ -14,7 +14,7 @@
 body {
   background-color: #fff;
   color: #5b5b5b;
-  font-family: Gotham SSm A, arial, helvetica, sans-serif;
+  font-family:Avenir Next;
   font-size: 13px;
   line-height: 18px;
   text-align:center;
@@ -25,11 +25,15 @@ body {
 #hellobar{
   margin-bottom:0px;
   border-bottom:1px solid #dedede;
-  background:#ECF0F1;
-  padding-top:45px;
-  height:49px;
-  font-family:MyriadPro;
-  font-size:30px;
+  background-color:black;
+  padding-top:14px;
+  height:38px;
+  font-family:Avenir Next;
+  font-size:26px;
+  color:white;
+}
+.style_image{
+  float:left;
 }
 #vidthumbnailcontainer:hover{
   color:#5b5b5b;
@@ -53,7 +57,6 @@ body {
 #vidthumbnailcontainer{
   padding:10px 5px 10px 5px;
   font-size:12px;
-  font-family:helvetica;
   width:30%;
   height:200px;
   float:left;
