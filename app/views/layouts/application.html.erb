@@ -19,19 +19,20 @@
 <body>
  
 <div id="hellobar">
-  <%= image_tag("livegenielogo.jpg", :size => "35x35", :alt => "Show Group", :class => "style_image" ) %> 
+  <%= link_to image_tag("livegenielogo.jpg", :size => "35x35", :alt => "Show Group", :class => "style_image" ),root_path %> 
   LIVEgenie         
   </div>
 <div id="container">
 <%= yield %>
   </div>
-  
-  <div id="footer" style="border-top:1px solid;height:60px;text-align:center;background:#ECF0F1;">
-    <p> Home | About Us | Contact | Terms  </p>
-  </p> All right reserved.  LIVEgenie 2013 </p>
   <p>
 <%= link_to 'Submit a New Video', new_video_path %>
 </p>
+  <div id="footer" style="border-top:1px solid;height:60px;text-align:center;background:#ECF0F1;">
+    <p> <a href="https://twitter.com/LIVEgenie" class="twitter-follow-button" data-show-count="false">Follow @LIVEgenie</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </p>
+  </p> All right reserved.  LIVEgenie 2013 </p>
+  
   </div>
 </body>
 </html>
