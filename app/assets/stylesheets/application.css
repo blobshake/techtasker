@@ -25,16 +25,15 @@ body {
 #hellobar{
   margin-bottom:0px;
   border-bottom:1px solid #dedede;
-  background-color:black;
-  padding-top:14px;
-  height:38px;
+  background-color:#ECF0F1;
+  height:auto;
+  width:100%;
   font-family:Avenir Next;
   font-size:26px;
-  color:white;
+  color:black;
+  display:block;
 }
-.style_image{
-  float:left;
-}
+
 #vidthumbnailcontainer:hover{
   color:#5b5b5b;
   background:#def1f8;
@@ -56,10 +55,13 @@ body {
 }
 #vidthumbnailcontainer{
   padding:10px 5px 10px 5px;
-  font-size:12px;
-  width:30%;
-  height:160px;
+  font-size:22px;
+  font-family:'Noto Serif';
+  width:350px;
+  height:242px;
   float:left;
+  color:black;
+  
 }
 #fbshare{
   background:#3b5998;
